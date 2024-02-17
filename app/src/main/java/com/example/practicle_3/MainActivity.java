@@ -20,13 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         u1 = (EditText) findViewById(R.id.username);
-        String uname = u1.getText().toString();
         p1 = (EditText) findViewById(R.id.password);
-        String pass = p1.getText().toString();
         Button b = (Button) findViewById(R.id.submit);
         b.setEnabled(false);
 
-        String email_pattern = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+        String email_pattern = "^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
         String validPassword = "vidhi";
 
         p1.addTextChangedListener(new TextWatcher() {
